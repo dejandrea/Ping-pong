@@ -45,11 +45,12 @@ function draw(){
   if(gameState === start){
 
     if (modoJogo === 0) {
-      textSize(15);
+      textSize(20);
       textAlign(CENTER,CENTER);
-      fill("black")
-      strokeWeight(2)
-      text("Press S to single Player Game or M to multiplayer Game",200,60);
+      fill("red")
+      strokeWeight(1)
+      text("Press S to single Player Game ",200,50);
+      text("or M to multiplayer Game",200,75);
 
       if (keyDown("s")) {
         modoJogo = 1
@@ -147,7 +148,7 @@ function drawLine(){
 }
 
 function startGame(){
-  ball.setVelocity(2,3);
+  ball.setVelocity(4,5);
 }
 
 function resetGame(){
